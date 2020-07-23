@@ -99,3 +99,4 @@ MonoBehaviour:
   projectile: {fileID: 5206418990972265214, guid: 351be8f65df043147a9f5a72b7980ddb,
     type: 3}
   projectileSpeed: 30
+  projectileFiringPeriod: 0.1
