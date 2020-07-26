@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1806254939715278327}
   - component: {fileID: 8322492744607178961}
   - component: {fileID: 3680301561305362900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cc463e0fd4f5441941f095836951b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
+    type: 3}
   health: 100
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 1
+  projectileSpeed: 15
 --- !u!58 &3680301561305362900
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120,7 +125,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.042804718}

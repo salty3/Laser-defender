@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    [Header("Player")]
+    [SerializeField] private float health = 100f;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float padding = 0.5f;
 
+    [Header("Projectile")]
     [SerializeField] private GameObject projectile;
     [SerializeField] private float projectileSpeed = 30f;
     [SerializeField] private float projectileFiringPeriod = 0.1f;
@@ -35,6 +37,28 @@ public class Player : MonoBehaviour
         Fire();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
+        if (!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+        damageDealer.Hit();
+        if (health <= 0)
+        {
+            Death();
+        }
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
+    }
+
     private void Fire()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -56,8 +80,6 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
-
-   
 
     private void Move()
     {

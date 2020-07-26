@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1624829857850326098}
   - component: {fileID: 3435611466309939764}
   - component: {fileID: -3838946346200701169}
-  m_Layer: 0
-  m_Name: Player Laser
+  m_Layer: 11
+  m_Name: Enemy Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e2b3cb2548714a40900d5d2d6cbd70c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06ada066f449df545b94d4635aa38357, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
