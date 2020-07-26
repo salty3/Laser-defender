@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6481613978758505390}
   - component: {fileID: 1624829857850326098}
   - component: {fileID: 3435611466309939764}
+  - component: {fileID: -3838946346200701169}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: Player Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,6 +50,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -133,3 +135,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.13, y: 0.57}
   m_Direction: 0
+--- !u!114 &-3838946346200701169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206418990972265214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4672d69e9f215a6468115ba8deecc567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
