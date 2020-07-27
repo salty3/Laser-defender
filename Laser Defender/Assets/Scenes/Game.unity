@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: 3559572652040041019, guid: dceb52115d338604ca006c532218e5bf,
         type: 3}
       propertyPath: m_Name
-      value: Shredder (1)
+      value: ShredderBottom
       objectReference: {fileID: 0}
     - target: {fileID: 3559572652040041020, guid: dceb52115d338604ca006c532218e5bf,
         type: 3}
@@ -812,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 3559572652040041019, guid: dceb52115d338604ca006c532218e5bf,
         type: 3}
       propertyPath: m_Name
-      value: Shredder
+      value: ShredderTop
       objectReference: {fileID: 0}
     - target: {fileID: 3559572652040041020, guid: dceb52115d338604ca006c532218e5bf,
         type: 3}

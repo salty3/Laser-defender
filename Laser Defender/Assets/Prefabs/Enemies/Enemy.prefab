@@ -109,14 +109,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cc463e0fd4f5441941f095836951b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  explosionVFX: {fileID: 344251202108715365, guid: bb4a0ecce57ef63478a1650a505812a6,
+    type: 3}
   projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
     type: 3}
-  explosion: {fileID: 344251202108715365, guid: bb4a0ecce57ef63478a1650a505812a6,
-    type: 3}
-  health: 100
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 1
   projectileSpeed: 15
+  onDeathSound: {fileID: 8300000, guid: 5c53d334f1d3f144e9d2d052024686c7, type: 3}
+  onShotSound: {fileID: 8300000, guid: 529d5b9d311dd4646ba232071a80a4fb, type: 3}
+  deathVolume: 0.1
+  shotVolume: 0.1
 --- !u!58 &3680301561305362900
 CircleCollider2D:
   m_ObjectHideFlags: 0
