@@ -111,6 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
     type: 3}
+  explosion: {fileID: 344251202108715365, guid: bb4a0ecce57ef63478a1650a505812a6,
+    type: 3}
   health: 100
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 1

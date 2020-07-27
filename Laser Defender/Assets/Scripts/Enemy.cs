@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
+    [SerializeField] private ParticleSystem explosion;
     [SerializeField] private float health = 100f;
     [SerializeField] private float minTimeBetweenShots = 0.2f;
     [SerializeField] private float maxTimeBetweenShots = 2f;
@@ -60,7 +61,9 @@ public class Enemy : MonoBehaviour
 
     private void Death()
     {
+        var onDeathExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        Destroy(onDeathExplosion, 0.2f);
     }
 
 }
