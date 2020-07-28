@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [Header("Enemy")]
+    [Header("Enemy stats")]
     [SerializeField] private float health = 100f;
     [SerializeField] private ParticleSystem explosionVFX;
+    [SerializeField] private int killScore = 10;
 
     [Header("Projectile")]
     [SerializeField] private GameObject projectile;
@@ -20,7 +21,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip onShotSound;
     [SerializeField] [Range(0, 1)] private float deathVolume = 0.1f;
     [SerializeField] [Range(0, 1)] private float shotVolume = 0.1f;
-
 
 
     private float shotCounter;
@@ -79,6 +79,7 @@ public class Enemy : MonoBehaviour
 
     private void Death()
     {
+        FindObjectOfType<GameSession>().AddScore(killScore);
         AudioSource.PlayClipAtPoint(onDeathSound, Camera.main.transform.position, deathVolume);
         var onDeathExplosion = Instantiate(explosionVFX, transform.position, Quaternion.identity);
         Destroy(gameObject);

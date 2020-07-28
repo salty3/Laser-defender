@@ -337,6 +337,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 29362222141453434, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 29362222141453434, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29362222141453434, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29362222141453434, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 94792487498473608, guid: 3b68111fb52bc7e4080711bb15936ad0,
         type: 3}
       propertyPath: m_Name
@@ -447,5 +467,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5400608071461838360, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400608071461838360, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400608071461838360, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400608071461838360, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243844290025566154, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243844290025566154, guid: 3b68111fb52bc7e4080711bb15936ad0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6911677813715572729, guid: 3b68111fb52bc7e4080711bb15936ad0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3b68111fb52bc7e4080711bb15936ad0, type: 3}
