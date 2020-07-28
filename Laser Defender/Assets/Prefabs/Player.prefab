@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149849056b2dd2a40b926bb95c1b49ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
   moveSpeed: 10
   padding: 0.5
   projectile: {fileID: 5206418990972265214, guid: 351be8f65df043147a9f5a72b7980ddb,

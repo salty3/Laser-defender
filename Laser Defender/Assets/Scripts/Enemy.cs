@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy stats")]
-    [SerializeField] private float health = 100f;
+    [SerializeField] private int health = 100;
     [SerializeField] private ParticleSystem explosionVFX;
     [SerializeField] private int killScore = 10;
 

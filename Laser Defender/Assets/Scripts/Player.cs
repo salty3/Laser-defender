@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("Player")]
-    [SerializeField] private float health = 100f;
+    [SerializeField] private int health = 100;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float padding = 0.5f;
 
@@ -110,5 +110,10 @@ public class Player : MonoBehaviour
 
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }
