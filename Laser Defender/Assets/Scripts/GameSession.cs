@@ -11,7 +11,6 @@ public class GameSession : MonoBehaviour
         SetUpSingleton();
     }
 
-
     private void SetUpSingleton()
     {
         if (FindObjectsOfType(GetType()).Length > 1)

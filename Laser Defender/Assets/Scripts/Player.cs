@@ -5,23 +5,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Player")]
-    [SerializeField] private int health = 100;
+    [Header("Movement")]
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float padding = 0.5f;
-
-    [Header("Projectile")]
-    [SerializeField] private GameObject projectile;
-    [SerializeField] private float projectileSpeed = 30f;
-    [SerializeField] private float projectileFiringPeriod = 0.1f;
-
-    [Header("Sound")]
-    [SerializeField] private AudioClip onDeathSound;
-    [SerializeField] private AudioClip onShotSound;
-    [SerializeField] [Range(0, 1)] private float deathVolume = 0.1f;
-    [SerializeField] [Range(0, 1)] private float shotVolume = 0.1f;
-
-    private Coroutine firingCoroutine;
 
     private float xMin;
     private float xMax;
@@ -29,14 +15,20 @@ public class Player : MonoBehaviour
     private float yMin;
     private float yMax;
 
-    // Start is called before the first frame update
+    [Header("Shooting")]
+    [SerializeField] private float projectileFiringPeriod = 0.1f;
+
+    private Coroutine firingCoroutine;
+
+
+    private SpaceShip spaceShip;
+
     void Start()
     {
+        spaceShip = GetComponent<SpaceShip>();
         SetUpMoveBorders();
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -47,25 +39,12 @@ public class Player : MonoBehaviour
     {
         DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
         if (!damageDealer) { return; }
-        ProcessHit(damageDealer);
-    }
-
-    private void ProcessHit(DamageDealer damageDealer)
-    {
-        health -= damageDealer.GetDamage();
-        damageDealer.Hit();
-        if (health <= 0)
+        if (spaceShip.ProcessHit(damageDealer))
         {
-            Death();
+            FindObjectOfType<Level>().LoadGameOver();
         }
     }
 
-    public void Death()
-    {
-        FindObjectOfType<Level>().LoadGameOver();
-        AudioSource.PlayClipAtPoint(onDeathSound, Camera.main.transform.position, deathVolume);
-        Destroy(gameObject);
-    }
 
     private void Fire()
     {
@@ -83,9 +62,7 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            GameObject laser = Instantiate(projectile, transform.position, Quaternion.identity);
-            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
-            AudioSource.PlayClipAtPoint(onShotSound, Camera.main.transform.position, shotVolume);
+            spaceShip.Fire(true);
             yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
@@ -110,10 +87,5 @@ public class Player : MonoBehaviour
 
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
-    }
-
-    public int GetHealth()
-    {
-        return health;
     }
 }

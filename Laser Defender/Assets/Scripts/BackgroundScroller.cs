@@ -9,6 +9,11 @@ public class BackgroundScroller : MonoBehaviour
     Material material;
     Vector2 offset;
 
+
+    private void Awake()
+    {
+        SetUpSingleton();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +25,17 @@ public class BackgroundScroller : MonoBehaviour
     void Update()
     {
         material.mainTextureOffset += offset * Time.deltaTime;
+    }
+
+    private void SetUpSingleton()
+    {
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }

@@ -6,13 +6,13 @@ using UnityEngine;
 public class DisplayHealth : MonoBehaviour
 {
     private TextMeshProUGUI healthText;
-    private Player player;
+    private SpaceShip player;
 
     // Start is called before the first frame update
     void Start()
     {
         healthText = GetComponent<TextMeshProUGUI>();
-        player = FindObjectOfType<Player>();
+        player = GameObject.FindWithTag("Player").GetComponent<SpaceShip>();
     }
 
     // Update is called once per frame

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4150659765933419854}
   - component: {fileID: -1806254939715278327}
   - component: {fileID: 8322492744607178961}
+  - component: {fileID: 5156327286917926761}
+  - component: {fileID: -2329189166059184468}
   - component: {fileID: 3680301561305362900}
   - component: {fileID: -4904701114515312596}
   m_Layer: 10
@@ -110,18 +112,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cc463e0fd4f5441941f095836951b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  explosionVFX: {fileID: 344251202108715365, guid: bb4a0ecce57ef63478a1650a505812a6,
-    type: 3}
-  projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
-    type: 3}
+  scorePoints: 10
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 1
-  projectileSpeed: 15
+--- !u!114 &5156327286917926761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150659765933419855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b2cbc25b1fec440966cc7f9af6584e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
+    type: 3}
+  projectileSpeed: 30
   onDeathSound: {fileID: 8300000, guid: 5c53d334f1d3f144e9d2d052024686c7, type: 3}
   onShotSound: {fileID: 8300000, guid: 529d5b9d311dd4646ba232071a80a4fb, type: 3}
   deathVolume: 0.1
   shotVolume: 0.1
+  explosionVFX: {fileID: 3247006134495191978, guid: bb4a0ecce57ef63478a1650a505812a6,
+    type: 3}
+  explosionDuration: 0.2
+--- !u!114 &-2329189166059184468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150659765933419855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4672d69e9f215a6468115ba8deecc567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 150
 --- !u!58 &3680301561305362900
 CircleCollider2D:
   m_ObjectHideFlags: 0
