@@ -60,8 +60,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Death()
+    public void Death()
     {
+        FindObjectOfType<Level>().LoadGameOver();
         AudioSource.PlayClipAtPoint(onDeathSound, Camera.main.transform.position, deathVolume);
         Destroy(gameObject);
     }

@@ -29,7 +29,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 21.41891, y: 21.41891, z: 21.41891}
-  m_Children: []
+  m_Children:
+  - {fileID: 2302991284998359857}
+  - {fileID: 229050220481578506}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95,3 +97,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollingSpeed: 0.05
+--- !u!1001 &1321786854601188277
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3012509842360136339}
+    m_Modifications:
+    - target: {fileID: 982400973935552641, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+        type: 3}
+      propertyPath: m_Name
+      value: Starfield Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 982400973935552644, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982400973935552644, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 982400973935552644, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982400973935552644, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 698cd2cb3c8c08a44a5108ff0b354bc2, type: 3}
+--- !u!4 &2302991284998359857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 982400973935552644, guid: 698cd2cb3c8c08a44a5108ff0b354bc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1321786854601188277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9205150622888736764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3012509842360136339}
+    m_Modifications:
+    - target: {fileID: 8976514420158509555, guid: d7ab039fefaecc843beb348658fbba53,
+        type: 3}
+      propertyPath: m_Name
+      value: Starfield Far
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976514420158509558, guid: d7ab039fefaecc843beb348658fbba53,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976514420158509558, guid: d7ab039fefaecc843beb348658fbba53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976514420158509558, guid: d7ab039fefaecc843beb348658fbba53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976514420158509558, guid: d7ab039fefaecc843beb348658fbba53,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7ab039fefaecc843beb348658fbba53, type: 3}
+--- !u!4 &229050220481578506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8976514420158509558, guid: d7ab039fefaecc843beb348658fbba53,
+    type: 3}
+  m_PrefabInstance: {fileID: 9205150622888736764}
+  m_PrefabAsset: {fileID: 0}
