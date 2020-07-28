@@ -29,6 +29,7 @@ public class SpaceShip : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
+            health = 0;
             Death();
             return true;
         }
@@ -37,13 +38,15 @@ public class SpaceShip : MonoBehaviour
 
     public void Fire(bool forwardDirection)
     {
-        GameObject laser = Instantiate(projectile, transform.position, Quaternion.identity);
+        
         if (forwardDirection)
         {
+            GameObject laser = Instantiate(projectile, transform.position, Quaternion.identity);
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
         }
         else
         {
+            GameObject laser = Instantiate(projectile, transform.position, Quaternion.Euler(0, 0, 180));
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
         }
         

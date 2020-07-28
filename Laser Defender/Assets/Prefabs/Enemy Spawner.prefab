@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8110078563768577051}
   - component: {fileID: 8110078563768577052}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: Enemy Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveConfigs:
   - {fileID: 11400000, guid: 6f9026099755f9f4bbcda0b24ca07a52, type: 2}
-  - {fileID: 11400000, guid: 79e9b275ff14d2b41b36a201eb623cd3, type: 2}
-  - {fileID: 11400000, guid: 16860b72c0c80164db863a902ae680a0, type: 2}
-  - {fileID: 11400000, guid: 26799bae988205c4497f70bd64ec8fe0, type: 2}
+  - {fileID: 11400000, guid: 09f423ad2c2fc894688bbce67e2dd020, type: 2}
+  - {fileID: 11400000, guid: 03318ed43fd4ca2468dd1d8b1461ae09, type: 2}
+  - {fileID: 11400000, guid: ce25cbd4fbeb07446a38874603209cc3, type: 2}
   startingWave: 0
+  looping: 1

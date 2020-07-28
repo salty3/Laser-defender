@@ -549,7 +549,7 @@ PrefabInstance:
     - target: {fileID: 8976514420158509558, guid: a82df413a31391848ac34bedc0b4cea9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8976514420158509558, guid: a82df413a31391848ac34bedc0b4cea9,
         type: 3}
@@ -619,7 +619,6 @@ Transform:
   m_Children:
   - {fileID: 755533487}
   - {fileID: 1919485920}
-  - {fileID: 1075782114}
   - {fileID: 1649583625}
   - {fileID: 768630748}
   m_Father: {fileID: 0}
@@ -686,12 +685,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
---- !u!4 &1075782114 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8110078563768577051, guid: 9606d5470f9512740a3ce99b86f50240,
-    type: 3}
-  m_PrefabInstance: {fileID: 8110078563540692839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1649583625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3012509842360136339, guid: 765b5d3d0a7a6604e80b152ea1b8b527,
@@ -818,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 3012509842360136339, guid: 765b5d3d0a7a6604e80b152ea1b8b527,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3012509842360136339, guid: 765b5d3d0a7a6604e80b152ea1b8b527,
         type: 3}
@@ -1054,7 +1047,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 801466245}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8110078563768577051, guid: 9606d5470f9512740a3ce99b86f50240,
         type: 3}
@@ -1094,7 +1087,7 @@ PrefabInstance:
     - target: {fileID: 8110078563768577051, guid: 9606d5470f9512740a3ce99b86f50240,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8110078563768577051, guid: 9606d5470f9512740a3ce99b86f50240,
         type: 3}
@@ -1109,11 +1102,6 @@ PrefabInstance:
     - target: {fileID: 8110078563768577051, guid: 9606d5470f9512740a3ce99b86f50240,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8110078563768577052, guid: 9606d5470f9512740a3ce99b86f50240,
-        type: 3}
-      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8110078563768577053, guid: 9606d5470f9512740a3ce99b86f50240,

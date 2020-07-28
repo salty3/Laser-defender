@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
             var newEnemy = Instantiate(
                 waveConfig.GetEnemyPrefab(),
                 waveConfig.GetWaypoints()[0].position,
-                Quaternion.identity);
+                Quaternion.Euler(0, 0, 180));
 
             newEnemy.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);
 
