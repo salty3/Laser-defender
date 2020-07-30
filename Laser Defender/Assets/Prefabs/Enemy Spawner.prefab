@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8110078563768577051}
   - component: {fileID: 8110078563768577052}
+  - component: {fileID: 1162591880019020568}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -43,10 +44,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f25a62d4610f74f9ea5127ccbe1133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfigs:
-  - {fileID: 11400000, guid: 6f9026099755f9f4bbcda0b24ca07a52, type: 2}
-  - {fileID: 11400000, guid: 09f423ad2c2fc894688bbce67e2dd020, type: 2}
-  - {fileID: 11400000, guid: 03318ed43fd4ca2468dd1d8b1461ae09, type: 2}
-  - {fileID: 11400000, guid: ce25cbd4fbeb07446a38874603209cc3, type: 2}
+  waveConfigs: []
   startingWave: 0
   looping: 1
+--- !u!114 &1162591880019020568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110078563768577053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493a0c066343f1b459e2244efe8c8b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawner: {fileID: 8110078563768577052}
+  spawnConfig: EMH
+  easyEnemies:
+  - {fileID: 4150659765933419855, guid: d6365c7e394cb4d40ac5e9cd01d7632d, type: 3}
+  - {fileID: 4150659765933419855, guid: aab8b5fb4604cad4dbbf6f6486295757, type: 3}
+  mediumEnemies:
+  - {fileID: 4150659765933419855, guid: 7684df774a3b271448c9fb69529385d5, type: 3}
+  - {fileID: 4150659765933419855, guid: b135bdde1b7ddfa4584c66b815b158ca, type: 3}
+  - {fileID: 4150659765933419855, guid: 27ff7d6f317a2844eaec7599ab3634d2, type: 3}
+  hardEnemies:
+  - {fileID: 4150659765933419855, guid: dc3eb87736f1657428853f0ab35a174f, type: 3}
+  - {fileID: 4150659765933419855, guid: 9748459390d32ec45a36f20935fd5baf, type: 3}
+  - {fileID: 4150659765933419855, guid: 85d0201e1d831cd4e90ec3f3214b5b9f, type: 3}
+  easyPaths: []
+  mediumPaths: []
+  hardPaths: []
+  minEasySpeed: 0
+  maxEasySpeed: 0
+  minMediumSpeed: 0
+  maxMediumSpeed: 0
+  minHardSpeed: 0
+  maxHardSpeed: 0
+  minEasyTime: 0
+  maxEasyTime: 0
+  minMediumTime: 0
+  maxMediumTime: 0
+  minHardTime: 0
+  maxHardTime: 0
+  minEasyEnemies: 0
+  maxEasyEnemies: 0
+  minMediumEnemies: 0
+  maxMediumEnemies: 0
+  minHardEnemies: 0
+  maxHardEnemies: 0

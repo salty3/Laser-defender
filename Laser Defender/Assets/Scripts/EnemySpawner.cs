@@ -40,13 +40,12 @@ public class EnemySpawner : MonoBehaviour
 
             newEnemy.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);
 
-            yield return new WaitForSeconds(
-                waveConfig.GetTimeBetweenSpawns() + 
-                UnityEngine.Random.Range(
-                    -waveConfig.GetSpawnRandomFactor(), 
-                    waveConfig.GetSpawnRandomFactor()
-                    )
-                ); 
+            yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns()); 
         }
+    }
+
+    public void SetWaveConfigs(List<WaveConfig> waveConfigs)
+    {
+        this.waveConfigs = waveConfigs;
     }
 }
