@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
         if (spaceShip.ProcessHit(damageDealer))
         {
             FindObjectOfType<Level>().LoadGameOver();
+            FindObjectOfType<UserInfo>().CalculateMoney();
         }
     }
 

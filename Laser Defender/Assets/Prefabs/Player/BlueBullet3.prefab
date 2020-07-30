@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4449602987569637261}
   - component: {fileID: 6216917780589796844}
-  - component: {fileID: 6481613978758505390}
   - component: {fileID: 1624829857850326098}
   - component: {fileID: 3435611466309939764}
   - component: {fileID: -3838946346200701169}
   m_Layer: 9
-  m_Name: BlueBullet
+  m_Name: BlueBullet3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5206418990972265214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,9 +72,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 701323481
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a9450bfa7931d2a4399a9c70edcaa576, type: 3}
+  m_Sprite: {fileID: 21300004, guid: a9450bfa7931d2a4399a9c70edcaa576, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6481613978758505390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5206418990972265214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d7cbf98ccf495409af51a6e643262c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1624829857850326098
 Rigidbody2D:
   serializedVersion: 4
@@ -133,7 +120,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.14080109, y: 0.28196955}
+  m_Size: {x: 0.17718087, y: 0.55611867}
   m_Direction: 0
 --- !u!114 &-3838946346200701169
 MonoBehaviour:
@@ -147,4 +134,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4672d69e9f215a6468115ba8deecc567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 300

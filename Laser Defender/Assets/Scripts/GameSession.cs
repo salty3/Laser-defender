@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameSession : MonoBehaviour
 {
+
     private int score = 0;
 
     private void Awake()
@@ -37,5 +38,5 @@ public class GameSession : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }
+
