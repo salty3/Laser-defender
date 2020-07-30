@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8938297994693292204, guid: 561678e870000b74ba1b761fde09fd1f, type: 3}
   money: 0
-  moneyMultiplier: 1
+  moneyMultiplier: 0.5

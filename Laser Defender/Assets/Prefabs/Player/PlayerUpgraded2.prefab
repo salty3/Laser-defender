@@ -118,7 +118,7 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 45
   onDeathSound: {fileID: 8300000, guid: 8659577b01ba3b846b26d668712a7038, type: 3}
-  onShotSound: {fileID: 8300000, guid: 1a8e8c01d01bc4742a4a7aa061906057, type: 3}
+  onShotSound: {fileID: 8300000, guid: 58e81b09c36a5f34ab9c14a9c043c3a5, type: 3}
   deathVolume: 0.1
   shotVolume: 0.1
   explosionVFX: {fileID: 3247006134495191978, guid: bb4a0ecce57ef63478a1650a505812a6,
