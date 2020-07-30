@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class WaveRandomiser : MonoBehaviour
 {
-    [SerializeField] private EnemySpawner enemySpawner;
-    [SerializeField] private string spawnConfig;
+    [SerializeField] private string easySpawnConfig;
+    [SerializeField] private string mediumSpawnConfig;
+    [SerializeField] private string hardSpawnConfig;
 
     [Header("Enemies")]
     [SerializeField] private GameObject[] easyEnemies;
@@ -18,36 +19,48 @@ public class WaveRandomiser : MonoBehaviour
     [SerializeField] private GameObject[] hardPaths;
 
     [Header("Move Speed")]
-    [SerializeField] [Range(1, 10)] private float minEasySpeed;
-    [SerializeField] [Range(10, 25)] private float maxEasySpeed;
-    [SerializeField] [Range(1, 10)] private float minMediumSpeed;
-    [SerializeField] [Range(10, 25)] private float maxMediumSpeed;
-    [SerializeField] [Range(1, 10)] private float minHardSpeed;
-    [SerializeField] [Range(10, 25)] private float maxHardSpeed;
+    [SerializeField] [Range(0, 25)] private float minEasySpeed;
+    [SerializeField] [Range(0, 25)] private float maxEasySpeed;
+    [SerializeField] [Range(0, 25)] private float minMediumSpeed;
+    [SerializeField] [Range(0, 25)] private float maxMediumSpeed;
+    [SerializeField] [Range(0, 25)] private float minHardSpeed;
+    [SerializeField] [Range(0, 25)] private float maxHardSpeed;
 
     [Header("Spawn Time")]
-    [SerializeField] [Range(1, 5)] private float minEasyTime;
-    [SerializeField] [Range(5, 10)] private float maxEasyTime;
-    [SerializeField] [Range(1, 5)] private float minMediumTime;
-    [SerializeField] [Range(1, 10)] private float maxMediumTime;
-    [SerializeField] [Range(1, 5)] private float minHardTime;
-    [SerializeField] [Range(5, 10)] private float maxHardTime;
+    [SerializeField] [Range(0, 10)] private float minEasyTime;
+    [SerializeField] [Range(0, 10)] private float maxEasyTime;
+    [SerializeField] [Range(0, 10)] private float minMediumTime;
+    [SerializeField] [Range(0, 10)] private float maxMediumTime;
+    [SerializeField] [Range(0, 10)] private float minHardTime;
+    [SerializeField] [Range(0, 10)] private float maxHardTime;
 
     [Header("Number of Enemies")]
-    [SerializeField] [Range(1, 25)] private int minEasyEnemies;
-    [SerializeField] [Range(25, 50)] private int maxEasyEnemies;
-    [SerializeField] [Range(1, 25)] private int minMediumEnemies;
-    [SerializeField] [Range(25, 50)] private int maxMediumEnemies;
-    [SerializeField] [Range(1, 25)] private int minHardEnemies;
-    [SerializeField] [Range(25, 50)] private int maxHardEnemies;
+    [SerializeField] [Range(1, 100)] private int minEasyEnemies;
+    [SerializeField] [Range(1, 100)] private int maxEasyEnemies;
+    [SerializeField] [Range(1, 100)] private int minMediumEnemies;
+    [SerializeField] [Range(1, 100)] private int maxMediumEnemies;
+    [SerializeField] [Range(1, 100)] private int minHardEnemies;
+    [SerializeField] [Range(1, 100)] private int maxHardEnemies;
 
+    private string spawnConfig;
 
-    private void Awake()
+    public void SetSpawnConfig(string difficult)
     {
-        enemySpawner.SetWaveConfigs(GenerateWaves());
+        switch (difficult)
+        {
+            case "Easy":
+                spawnConfig = easySpawnConfig;
+                break;
+            case "Medium":
+                spawnConfig = mediumSpawnConfig;
+                break;
+            case "Hard":
+                spawnConfig = hardSpawnConfig;
+                break;
+        }
     }
 
-    private List<WaveConfig> GenerateWaves()
+    public List<WaveConfig> GenerateWaves()
     {
         List<WaveConfig> waveConfigs = new List<WaveConfig>();
         foreach (char difficult in spawnConfig.ToCharArray())

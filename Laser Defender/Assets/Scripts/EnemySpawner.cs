@@ -5,14 +5,19 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-
     [SerializeField] private List<WaveConfig> waveConfigs;
     [SerializeField] private int startingWave = 0;
     [SerializeField] private bool looping = false;
 
-    
+    private UserInfo userInfo;
+    private WaveRandomiser waveRandomiser;
+
     IEnumerator Start()
     {
+        waveRandomiser = GetComponent<WaveRandomiser>();
+        userInfo = FindObjectOfType<UserInfo>();
+        waveRandomiser.SetSpawnConfig(userInfo.GetDifficult());
+        waveConfigs = waveRandomiser.GenerateWaves();
         do
         {
             yield return StartCoroutine(SpawnAllWaves());

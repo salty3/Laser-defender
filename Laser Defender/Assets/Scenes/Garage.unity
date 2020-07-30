@@ -703,7 +703,7 @@ MonoBehaviour:
       - m_Target: {fileID: 2994471564136875448, guid: 03262b27e2c4b3340849cd37defd5188,
           type: 3}
         m_TargetAssemblyTypeName: Level, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadDifficulty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

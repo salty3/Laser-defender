@@ -7,6 +7,7 @@ public class Level : MonoBehaviour
 {
     [SerializeField] private float loadDelay = 1f;
     private GameSession gameSession;
+    private UserInfo userInfo;
 
     public void LoadGame()
     {
@@ -29,6 +30,11 @@ public class Level : MonoBehaviour
         SceneManager.LoadScene("Garage");
     }
 
+    public void LoadDifficulty()
+    {
+        SceneManager.LoadScene("Difficulty");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
@@ -38,6 +44,19 @@ public class Level : MonoBehaviour
     {
         yield return new WaitForSeconds(loadDelay);
         SceneManager.LoadScene("Game Over");
-
     }
+
+    public void SetEasy()
+    {
+        FindObjectOfType<UserInfo>().SetEasy();
+    }
+    public void SetMedium()
+    {
+        FindObjectOfType<UserInfo>().SetMedium();
+    }
+    public void SetHard()
+    {
+        FindObjectOfType<UserInfo>().SetHard();
+    }
+
 }

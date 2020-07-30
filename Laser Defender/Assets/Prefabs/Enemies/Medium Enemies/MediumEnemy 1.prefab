@@ -130,7 +130,7 @@ MonoBehaviour:
   health: 100
   projectile: {fileID: 5206418990972265214, guid: c25f85176f349f84195ca902102c551a,
     type: 3}
-  projectileSpeed: 20
+  projectileSpeed: 18
   onDeathSound: {fileID: 8300000, guid: 5c53d334f1d3f144e9d2d052024686c7, type: 3}
   onShotSound: {fileID: 8300000, guid: 529d5b9d311dd4646ba232071a80a4fb, type: 3}
   deathVolume: 0.1

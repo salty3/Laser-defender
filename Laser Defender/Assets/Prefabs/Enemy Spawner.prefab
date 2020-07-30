@@ -59,8 +59,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493a0c066343f1b459e2244efe8c8b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawner: {fileID: 8110078563768577052}
-  spawnConfig: EMH
+  easySpawnConfig: EEEEEMEMMEMMEEEMEMEEEEEE
+  mediumSpawnConfig: MMMMEMMMMEMMHEMMEMMMEE
+  hardSpawnConfig: HMHMHMHMHMMMHHHHHHMMHM
   easyEnemies:
   - {fileID: 4150659765933419855, guid: d6365c7e394cb4d40ac5e9cd01d7632d, type: 3}
   - {fileID: 4150659765933419855, guid: aab8b5fb4604cad4dbbf6f6486295757, type: 3}
@@ -72,24 +73,34 @@ MonoBehaviour:
   - {fileID: 4150659765933419855, guid: dc3eb87736f1657428853f0ab35a174f, type: 3}
   - {fileID: 4150659765933419855, guid: 9748459390d32ec45a36f20935fd5baf, type: 3}
   - {fileID: 4150659765933419855, guid: 85d0201e1d831cd4e90ec3f3214b5b9f, type: 3}
-  easyPaths: []
-  mediumPaths: []
-  hardPaths: []
-  minEasySpeed: 0
-  maxEasySpeed: 0
-  minMediumSpeed: 0
-  maxMediumSpeed: 0
-  minHardSpeed: 0
-  maxHardSpeed: 0
-  minEasyTime: 0
-  maxEasyTime: 0
-  minMediumTime: 0
-  maxMediumTime: 0
-  minHardTime: 0
-  maxHardTime: 0
-  minEasyEnemies: 0
-  maxEasyEnemies: 0
-  minMediumEnemies: 0
-  maxMediumEnemies: 0
-  minHardEnemies: 0
-  maxHardEnemies: 0
+  easyPaths:
+  - {fileID: 6171903518083942189, guid: c1440ee7c837be147bba6d696173135d, type: 3}
+  - {fileID: 6171903518083942189, guid: bd308e6cf5ceb984fb8aefd4349f59fe, type: 3}
+  - {fileID: 6171903518083942189, guid: 7bfe2419b69cc4949b9405c7c4cb7508, type: 3}
+  mediumPaths:
+  - {fileID: 6171903518083942189, guid: 9384e6cd4b80d584f90e4595d9fe879d, type: 3}
+  - {fileID: 6171903518083942189, guid: c59322d3ac5c29046913730409a134f6, type: 3}
+  - {fileID: 6171903518083942189, guid: 094ddf14c0ea0e34ab5cabfa47cf5f98, type: 3}
+  hardPaths:
+  - {fileID: 6171903518083942189, guid: 41ac5ff8bc49dbf48971e9dea64517f8, type: 3}
+  - {fileID: 6171903518083942189, guid: bb93af9fd3c62f044b5eb941335748a3, type: 3}
+  - {fileID: 6171903518083942189, guid: 812fcf91ae0645f46a65e7c14e81a481, type: 3}
+  - {fileID: 6171903518083942189, guid: 6ee28ce0b884e8f4aad0253064aa77f2, type: 3}
+  minEasySpeed: 2
+  maxEasySpeed: 3
+  minMediumSpeed: 3
+  maxMediumSpeed: 6
+  minHardSpeed: 2
+  maxHardSpeed: 5
+  minEasyTime: 0.46
+  maxEasyTime: 0.72
+  minMediumTime: 0.56
+  maxMediumTime: 0.76
+  minHardTime: 1.22
+  maxHardTime: 1.4
+  minEasyEnemies: 8
+  maxEasyEnemies: 13
+  minMediumEnemies: 8
+  maxMediumEnemies: 12
+  minHardEnemies: 4
+  maxHardEnemies: 9

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -4904701114515312596}
   - component: {fileID: 3568737450279579993}
   m_Layer: 10
-  m_Name: EasyEnemy
+  m_Name: EasyEnemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePoints: 10
-  minTimeBetweenShots: 0.5
-  maxTimeBetweenShots: 2
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 3
 --- !u!114 &5156327286917926761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   health: 50
   projectile: {fileID: 5206418990972265214, guid: 1ecc14e1022f336499604a4f1cf601e7,
     type: 3}
-  projectileSpeed: 15
+  projectileSpeed: 10
   onDeathSound: {fileID: 8300000, guid: 5c53d334f1d3f144e9d2d052024686c7, type: 3}
   onShotSound: {fileID: 8300000, guid: 529d5b9d311dd4646ba232071a80a4fb, type: 3}
   deathVolume: 0.1

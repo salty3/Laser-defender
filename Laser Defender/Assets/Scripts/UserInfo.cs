@@ -8,6 +8,8 @@ public class UserInfo : MonoBehaviour
     [SerializeField] private float money = 0f;
     [SerializeField] private float moneyMultiplier = 1f;
 
+    [SerializeField] private string difficult;
+
 
     private void Awake()
     {
@@ -61,5 +63,26 @@ public class UserInfo : MonoBehaviour
     public float GetMultiplier()
     {
         return moneyMultiplier;
+    }
+
+    public void SetEasy() 
+    {
+        difficult = "Easy";
+        moneyMultiplier = 0.2f;
+    }
+    public void SetMedium()
+    {
+        difficult = "Medium";
+        moneyMultiplier = 0.4f;
+    }
+    public void SetHard()
+    {
+        difficult = "Hard";
+        moneyMultiplier = 0.8f;
+    }
+
+    public string GetDifficult()
+    {
+        return difficult;
     }
 }
